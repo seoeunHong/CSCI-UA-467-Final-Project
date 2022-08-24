@@ -1,0 +1,18 @@
+{{#if errorMessage}}
+  <span>{{errorMessage}}</span>
+{{/if}}
+
+<form method='POST'>
+  <input placeholder='Name' , name='name' , type='text' , required />
+  <input placeholder='Email' , name='email' , type='email' , required />
+  <input placeholder='Username' , name='username' , type='text' , required />
+  <input placeholder='Password' , name='password' , type='password' , required />
+  <input placeholder='Confirm Password' , name='password2' , type='password' , required />
+  <input type='submit' , value='Join' />
+
+</form>
+
+<div class='auth-switch'>
+  <span>Already have an account?</span>
+  <a href='/login'>Log in now &rarr;</a>
+</div>

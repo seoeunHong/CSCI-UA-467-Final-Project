@@ -1,0 +1,32 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Share your _____ moments!</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' />
+    <link rel='stylesheet' href='/static/css/styles.css' />
+  </head>
+  <body>
+    <header>
+      <a href='/' class='header__logo'>{{pageTitle}}</a>
+      <nav>
+        <ul>
+          <li> <a href='/search'>Search Someone's Moment!</a></li>
+          {{#if loggedIn}}
+            <li> <a href='/videos/upload'>Share your moment</a></li>
+            <li><a href='/users/{{loggedInUser._id}}'>My Shared Moments</a></li>
+            <li> <a href='/users/logout'>Log Out</a></li>
+          {{else}}
+            <li> <a href='/Login' class='header__logo'>Login</a></li>
+            <li> <a href='/join' class='header__logo'>Join</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+
+    </header>
+    {{{body}}}
+
+    <script src='/static/js/main.js'></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.video__data {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  .video__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .video__createdAt {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .video__owner {
+    margin-bottom: 20px;
+    font-size: 20px;
+    a {
+      color: cornflowerblue;
+      text-decoration: underline;
+    }
+  }
+}

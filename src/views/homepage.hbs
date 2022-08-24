@@ -1,0 +1,15 @@
+<main>
+  <div class='video-grid'>
+    {{#each videos as |video|}}
+      <a href='/videos/{{id}}' class='video'>
+        <div class='video__thumb'>Someone's Moment!</div>
+        <div class='video__data'>
+          <span class='video__title'>{{video.title}}</span>
+          <div class='video__meta'>
+            <span>{{video.creator.name}}'s moment</span>
+          </div>
+        </div>
+      </a>
+    {{/each}}
+  </div>
+</main>

@@ -1,0 +1,44 @@
+<main>
+  <div id='videoContainer'>
+    <video src='{{video.fileUrl}}'></video>
+    <div id='videoControls' class='videoControls'>
+      <div class='videoControls__play'>
+        <span id='play' class='videoControls__playBtn'>
+          <i class='fas fa-play'></i>
+        </span>
+        <div class='videoControls__time'>
+          <span id='currenTime'>00:00</span>
+          <span> / </span>
+          <span id='totalTime'>00:00</span>
+        </div>
+      </div>
+      <input id='timeline' , class='videoControls__timeline' , type='range' , step='1' , value='0' , min='0' />
+      <div class='videoControls__volume'>
+        <input id='volume' type='range' , step='0.1' , value='0.5' , min='0' , max='1' />
+        <span id='mute'>
+          <i class='fas fa-volume-up'></i>
+        </span>
+      </div>
+      <div>
+        <span id='fullScreen'>
+          <i class='fas fa-expand'></i>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class='video__data'>
+    <p class='video__title'>{{video.title}}</p>
+    <small class='video__owner'>Uploaded By
+      <a href='/users/{{video.creator.id}}'>{{video.creator.name}}</a>
+    </small>
+    <small class='video__createdAt'>{{video.createdAt}}</small>
+    {{#if isEqual}}
+      <a href='/videos/{{video.id}}/edit'> Edit Video &rarr;</a>
+      <br />
+      <a href='/videos/{{video.id}}/delete'>Delete Video &rarr;</a>
+    {{/if}}
+  </div>
+</main>
+<script src='/static/js/videoPlayer.js'></script>

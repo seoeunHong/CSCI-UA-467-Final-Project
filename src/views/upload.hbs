@@ -1,0 +1,13 @@
+{{#if errorMessage}}
+  <span>{{errorMessage}}</span>
+{{/if}}
+
+<form method='POST' , enctype='multipart/form-data'>
+  <label for='Video'>Video File</label>
+  <input type='file' , accept='video/*' , required, id='video' , name='video' />
+  <input placeholder='Title' , name='title' , type='text' , maxlength='50' ,required />
+  <input placeholder='Description' , name='description' , type='text' , required />
+  <input placeholder='Hashtages, seperated by comma' , name='hashtags' , type='text' />
+  <input type='submit' , value='Share your moment' />
+
+</form>
