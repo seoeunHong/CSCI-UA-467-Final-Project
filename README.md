@@ -1,6 +1,9 @@
 Web Application where users can upload and share their videos
+
 • Designed front-end with website wireframe and built it with Webpack, Sass, ESLint, and AJAX
+
 • Applied Express.js and MongoDB to build a server-side backend and utilized MongoDB Atlas and AWS for clouding service
+
 • Implemented bcrypt hashing algorithm to authenticate the users and apply session to store user information
 
 The content below is an example project proposal / requirements document. Replace the text below the lines marked "**TODO**" with details specific to your project. Remove the "TODO" lines.
